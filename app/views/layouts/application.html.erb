@@ -24,6 +24,13 @@
   </head>
 
   <body>
+    <p><%= link_to "Home", root_path %></p>
+    <p><%= link_to "New Kitten", new_kitten_path %></p>
+    <% flash.each do |key, message| %>
+      <div class="flash <%= key %>">
+        <%= message %>
+      </div>
+    <% end %>
     <%= yield %>
   </body>
 </html>

@@ -1,0 +1,19 @@
+<h2>A list of all kittens</h2>
+<% @kittens.each do |kitten| %>
+<div>
+    <p>Name: <%= kitten.name %></p>
+</div>
+
+<div>
+    <p>Age: <%= kitten.age %></p>
+</div>
+
+<div>
+   <p>Softness: <%= kitten.softness %></p>
+</div>
+
+<div>
+    <p>Cuteness: <%= kitten.cuteness %></p>
+</div>
+ <%= link_to "Visit kitten's page", kitten %>
+<% end %>

@@ -1,0 +1,27 @@
+<%= form_with model: resource do |f| %>
+
+
+<div class="field">
+    <p><%= f.label :name %></p>
+    <p><%= f.text_field :name, required: true %></p>
+</div>
+
+<div class="field">
+    <p><%= f.label :age %></p>
+    <p><%= f.number_field :age, required: true %></p>
+</div>
+
+<div class="field">
+    <p><%= f.label :softness %></p>
+    <p><%= f.number_field :softness, required: true %></p>
+</div>
+
+<div class="field">
+   <p><%= f.label :cuteness %> </p>
+    <p><%= f.number_field :cuteness, required: true %></p>
+</div>
+
+<div>
+    <%= f.submit %>
+</div>
+<% end %>

@@ -1,0 +1,6 @@
+<h2><%= @kitten.name %>'s page</h2>
+
+<p>Age: <%= @kitten.age %></p>
+<p>Softness: <%= @kitten.softness %></p>
+<p>Cuteness: <%= @kitten.cuteness %></p>
+<%= button_to "Delete Kitten", @kitten, method: :delete %>
